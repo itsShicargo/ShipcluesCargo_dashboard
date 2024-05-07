@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { APP_NAME } from 'constants/app.constant'
 
-const LOGO_SRC_PATH = '/img/log  ?                          o/'
+const LOGO_SRC_PATH = '/img/logo'
 
 const Logo = (props) => {
     const { type, mode, gutter, className, imgClass, style, logoWidth } = props

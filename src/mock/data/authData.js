@@ -2,7 +2,7 @@ export const signInUserData = [
     {
         id: '21',
         avatar: '/img/avatars/thumb-1.jpg',
-        userName: 'Carolyn Perkins',
+        userName: 'Prince',
         email: 'carolyn.p@elstar.com',
         authority: ['admin', 'user'],
         password: '123Qwe',
