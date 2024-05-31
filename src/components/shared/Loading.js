@@ -2,7 +2,7 @@ import React from 'react'
 import { Spinner } from 'components/ui'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import Logo from 'components/template/Logo'
+// import Logo from 'components/template/Logo'
 
 const DefaultLoading = (props) => {
     const {

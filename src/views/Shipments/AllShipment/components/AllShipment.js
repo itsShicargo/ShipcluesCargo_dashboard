@@ -2,7 +2,7 @@ import React from 'react'
 import "./AllShipmennt.css"
 
 import {Tabs} from 'components/ui'
-import ShipmentTableTools from './ShimentTableTools'
+// import ShipmentTableTools from './ShimentTableTools'
 import Orders from './Orders';
 import NeedAction from './NeedAction';
 import PendingPickup from './PendingPickup';

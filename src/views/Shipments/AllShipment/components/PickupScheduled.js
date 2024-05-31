@@ -1,6 +1,6 @@
 
 import { useState, useMemo } from 'react';
-import { Table, Pagination, Select } from 'components/ui';
+import { Table, Pagination, } from 'components/ui';
 import "./AllShipmennt.css"
 
 
@@ -35,13 +35,13 @@ const tableData = () => {
     return arr;
 };
 
-const pageSizeOption = [
-    { value: 10, label: '10 / page' },
-    { value: 20, label: '20 / page' },
-    { value: 30, label: '30 / page' },
-    { value: 40, label: '40 / page' },
-    { value: 50, label: '50 / page' },
-];
+// const pageSizeOption = [
+//     { value: 10, label: '10 / page' },
+//     { value: 20, label: '20 / page' },
+//     { value: 30, label: '30 / page' },
+//     { value: 40, label: '40 / page' },
+//     { value: 50, label: '50 / page' },
+// ];
 
 const PickupScheduled = () => {
     const columns = useMemo(
@@ -104,9 +104,9 @@ const PickupScheduled = () => {
         table.setPageIndex(page - 1);
     };
 
-    const onSelectChange = (value = 0) => {
-        table.setPageSize(Number(value));
-    };
+    // const onSelectChange = (value = 0) => {
+    //     table.setPageSize(Number(value));
+    // };
 
     return (
         <div className="max-h-[500px] overflow-y-auto">
