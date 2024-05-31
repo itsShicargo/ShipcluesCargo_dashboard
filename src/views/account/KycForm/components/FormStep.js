@@ -42,7 +42,7 @@ const FormStep = ({ currentStep, currentStepStatus, stepStatus  , setShowError }
             dispatch(setCurrentStep(step))
         }
 
-        if(selectedStepStatus == "pending"){
+        if(selectedStepStatus === "pending"){
             setShowError(true)
         }
     }

@@ -1,18 +1,15 @@
 import {
     Input,
-    Button,
-    DatePicker,
+
     Select,
     FormItem,
     FormContainer,
-    Upload,
-    Switcher,
+
 } from 'components/ui'
 import { Field, Form, Formik } from 'formik'
-import { useState } from 'react'
+
 // import { components } from 'react-select'
 import * as Yup from 'yup'
-import Addform from './Addform'
 
 // const { SingleValue } = components
 
@@ -21,10 +18,7 @@ const dimension = [
     { value: 'Inch', label: 'Inch' },
 ]
 
-const surface = [
-    { value: 'surface', label: 'surface' },
-    { value: 'Air', label: 'Air' },
-]
+
 
 
 
@@ -74,13 +68,13 @@ const Abc = ({
         onNextChange?.(values, 'Abc', setSubmitting)
     }
 
-    const onCheck = (value, field, form) => {
-        form.setFieldValue(field.name, value)
-    }
+    // const onCheck = (value, field, form) => {
+    //     form.setFieldValue(field.name, value)
+    // }
 
-    const onBack = () => {
-        onBackChange?.()
-    }
+    // const onBack = () => {
+    //     onBackChange?.()
+    // }
 
     
 

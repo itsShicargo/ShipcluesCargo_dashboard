@@ -1,37 +1,37 @@
 import React, { useEffect, useMemo, useRef } from 'react'
-import { Avatar, Badge } from 'components/ui'
+// import { Avatar } from 'components/ui'
 import { DataTable } from 'components/shared'
-import { HiOutlinePencil, HiOutlineTrash } from 'react-icons/hi'
-import { FiPackage } from 'react-icons/fi'
+import { HiOutlinePencil } from 'react-icons/hi'
+// import { FiPackage } from 'react-icons/fi'
 import { useDispatch, useSelector } from 'react-redux'
 import { getProducts, setTableData } from '../store/dataSlice'
-import { setSelectedProduct } from '../store/stateSlice'
-import { toggleDeleteConfirmation } from '../store/stateSlice'
+// import { setSelectedProduct } from '../store/stateSlice'
+// import { toggleDeleteConfirmation } from '../store/stateSlice'
 import useThemeClass from 'utils/hooks/useThemeClass'
 import ProductDeleteConfirmation from './ProductDeleteConfirmation'
 import { useNavigate } from 'react-router-dom'
 import cloneDeep from 'lodash/cloneDeep'
 
-const inventoryStatusColor = {
-    0: {
-        label: 'Hitesh',
-        dotClass: 'bg-emerald-500',
-        textClass: 'text-emerald-500',
-    },
-    1: {
-        label: 'Hitesh',
-        dotClass: 'bg-amber-500',
-        textClass: 'text-amber-500',
-    },
-    2: {
-        label: 'Hitesh',
-        dotClass: 'bg-red-500',
-        textClass: 'text-red-500',
-    },
-}
+// const inventoryStatusColor = {
+//     0: {
+//         label: 'Hitesh',
+//         dotClass: 'bg-emerald-500',
+//         textClass: 'text-emerald-500',
+//     },
+//     1: {
+//         label: 'Hitesh',
+//         dotClass: 'bg-amber-500',
+//         textClass: 'text-amber-500',
+//     },
+//     2: {
+//         label: 'Hitesh',
+//         dotClass: 'bg-red-500',
+//         textClass: 'text-red-500',
+//     },
+// }
 
 const ActionColumn = ({ row }) => {
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
     const { textTheme } = useThemeClass()
     const navigate = useNavigate()
 
@@ -39,10 +39,10 @@ const ActionColumn = ({ row }) => {
         navigate(`/app/sales/product-edit/${row.id}`)
     }
 
-    const onDelete = () => {
-        dispatch(toggleDeleteConfirmation(true))
-        dispatch(setSelectedProduct(row.id))
-    }
+    // const onDelete = () => {
+    //     dispatch(toggleDeleteConfirmation(true))
+    //     dispatch(setSelectedProduct(row.id))
+    // }
 
     return (
         <div className="flex justify-end text-lg">
@@ -62,20 +62,20 @@ const ActionColumn = ({ row }) => {
     )
 }
 
-const ProductColumn = ({ row }) => {
-    const avatar = row.img ? (
-        <Avatar src={row.img} />
-    ) : (
-        <Avatar icon={<FiPackage />} />
-    )
+// const ProductColumn = ({ row }) => {
+//     const avatar = row.img ? (
+//         <Avatar src={row.img} />
+//     ) : (
+//         <Avatar icon={<FiPackage />} />
+//     )
 
-    return (
-        <div className="flex items-center">
-            {avatar}
-            <span className={`ml-2 rtl:mr-2 font-semibold`}>{row.name}</span>
-        </div>
-    )
-}
+//     return (
+//         <div className="flex items-center">
+//             {avatar}
+//             <span className={`ml-2 rtl:mr-2 font-semibold`}>{row.name}</span>
+//         </div>
+//     )
+// }
 
 const ProductTable = () => {
 
@@ -129,7 +129,7 @@ const ProductTable = () => {
                 header: 'Werehouse Code',
                 // accessorKey: 'Werehouse',
                 cell: (props) => {
-                    const row = props.row.original
+                    // const row = props.row.original
                     return <span className="capitalize">
                         121001
                     </span>
@@ -140,7 +140,7 @@ const ProductTable = () => {
                 // accessorKey: 'Address',
                 sortable: true,
                 cell: (props) => {
-                    const row = props.row.original
+                    // const row = props.row.original
                     return <span className="capitalize">MUKESH COLONY,BALLBAGRAH,Haryana, India, Pincode - 121004</span>
                 },
             },

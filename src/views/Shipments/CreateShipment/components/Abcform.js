@@ -60,13 +60,13 @@ const Abc = ({
         onNextChange?.(values, 'Abc', setSubmitting)
     }
 
-    const onCheck = (value, field, form) => {
-        form.setFieldValue(field.name, value)
-    }
+    // const onCheck = (value, field, form) => {
+    //     form.setFieldValue(field.name, value)
+    // }
 
-    const onBack = () => {
-        onBackChange?.()
-    }
+    // const onBack = () => {
+    //     onBackChange?.()
+    // }
 
     
 

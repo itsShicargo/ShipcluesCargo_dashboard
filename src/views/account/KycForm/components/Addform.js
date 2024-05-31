@@ -2,7 +2,7 @@
 
 // *************** start here react code ******************
 import React, { useEffect, useState } from 'react'
-import { HiCheckCircle, HiOutlineMinus, HiOutlinePlus } from 'react-icons/hi'
+import { HiOutlineMinus, HiOutlinePlus } from 'react-icons/hi'
 // import { Container } from "react-bootstrap";
 import useThemeClass from 'utils/hooks/useThemeClass'
 import Abc from './Abcform'
@@ -14,12 +14,12 @@ function Addform() {
         
     ])
 
-    const handleinputchange = (e, index) => {
-        const { name, value } = e.target
-        const list = [...inputList]
-        list[index][name] = value
-        setinputList(list)
-    }
+    // const handleinputchange = (e, index) => {
+    //     const { name, value } = e.target
+    //     const list = [...inputList]
+    //     list[index][name] = value
+    //     setinputList(list)
+    // }
 
     const handleremove = (index) => {
         const list = [...inputList]

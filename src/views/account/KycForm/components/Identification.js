@@ -62,9 +62,9 @@ const Identification = ({
         onNextChange?.(values, 'personalInformation', setSubmitting)
     }
 
-    const onCheck = (value, field, form) => {
-        form.setFieldValue(field.name, value)
-    }
+    // const onCheck = (value, field, form) => {
+    //     form.setFieldValue(field.name, value)
+    // }
 
     const onBack = () => {
         onBackChange?.()

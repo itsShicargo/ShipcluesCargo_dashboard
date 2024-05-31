@@ -9,7 +9,6 @@ import {
     Switcher,
 } from 'components/ui'
 import { Field, Form, Formik } from 'formik'
-import { useState } from 'react'
 // import { components } from 'react-select'
 import * as Yup from 'yup'
 import Addform from './Addform'
@@ -66,9 +65,9 @@ const AddressInfomation = ({
         onNextChange?.(values, 'AddressInfomation', setSubmitting)
     }
 
-    const onCheck = (value, field, form) => {
-        form.setFieldValue(field.name, value)
-    }
+    // const onCheck = (value, field, form) => {
+    //     form.setFieldValue(field.name, value)
+    // }
 
 
 

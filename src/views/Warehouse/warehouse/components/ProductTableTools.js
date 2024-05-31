@@ -1,7 +1,6 @@
 import React from 'react'
-import { Button, Upload } from 'components/ui'
-import { HiDownload, HiPlusCircle, HiUpload } from 'react-icons/hi'
-import ProductTableSearch from './ProductTableSearch'
+import { Button} from 'components/ui'
+import { HiPlusCircle, HiUpload } from 'react-icons/hi'
 // import ProductFilter from './ProductFilter'
 import { Link } from 'react-router-dom'
 
