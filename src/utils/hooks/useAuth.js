@@ -54,6 +54,7 @@ function useAuth() {
     const signUp = async (values) => {
         try {
             const resp = await apiSignUp(values)
+            console.log("resssssss" , resp)
             if (resp.data) {
                 const { token } = resp.data
                 dispatch(onSignInSuccess(token))
@@ -70,8 +71,11 @@ function useAuth() {
                     )
                 }
                 const redirectUrl = query.get(REDIRECT_URL_KEY)
+                console.log("tunnnnnnnnnnnnnnnnnn" ,query.get(REDIRECT_URL_KEY) ,  redirectUrl);
                 navigate(
-                    redirectUrl ? redirectUrl : appConfig.authenticatedEntryPath
+                    redirectUrl ? redirectUrl : 
+                    appConfig.authenticatedEntryPath
+                   
                 )
                 return {
                     status: 'success',

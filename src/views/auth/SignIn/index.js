@@ -5,8 +5,10 @@ const SignIn = () => {
     return (
         <>
             <div className="mb-8">
-                <h3 className="mb-1">Welcome To ShipCargo</h3>
-                <p>Please enter your credentials to sign in!</p>
+            <div className='flex justify-center items-center mb-4'>
+                    <img width={{width:"100%"}} src="/img/logo/logo-light-mode.svg" alt='logo' />
+                  </div>
+                {/* <p>Please enter your credentials to sign in!</p> */}
             </div>
             <SignInForm disableSubmit={false} />
         </>

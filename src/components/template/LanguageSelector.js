@@ -12,9 +12,8 @@ import { HiCheck } from 'react-icons/hi'
 
 const languageList = [
     { label: 'English', value: 'en', flag: 'us' },
-    { label: 'Chinese', value: 'zh-cn', flag: 'cn' },
-    { label: 'Espanol', value: 'es', flag: 'sp' },
-    { label: 'Arabic', value: 'ar', flag: 'ar' },
+    
+    { label: 'Hindi', value: 'hi', flag: 'fr' }
 ]
 
 export const LanguageSelector = ({ className }) => {

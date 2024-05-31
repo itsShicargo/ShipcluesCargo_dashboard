@@ -3,10 +3,9 @@ import PropTypes from 'prop-types'
 import classNames from 'classnames'
 import { APP_NAME } from 'constants/app.constant'
 
-const LOGO_SRC_PATH = '/img/logo'
 
 const Logo = (props) => {
-    const { type, mode, gutter, className, imgClass, style, logoWidth } = props
+    const { gutter, className, imgClass, style, logoWidth } = props
 
     return (
         <div
@@ -17,8 +16,8 @@ const Logo = (props) => {
             }}
         >
             <img
-                className={imgClass}
-                src={`${LOGO_SRC_PATH}logo-${mode}-${type}.png`}
+                className={imgClass} 
+                src="/img/logo/logo-light-mode.svg"
                 alt={`${APP_NAME} logo`}
             />
         </div>

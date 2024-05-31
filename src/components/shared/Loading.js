@@ -2,6 +2,7 @@ import React from 'react'
 import { Spinner } from 'components/ui'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import Logo from 'components/template/Logo'
 
 const DefaultLoading = (props) => {
     const {
@@ -23,7 +24,9 @@ const DefaultLoading = (props) => {
             {customLoader ? (
                 <>{customLoader}</>
             ) : (
-                <Spinner className={spinnerClass} size={40} />
+                <Spinner className={spinnerClass} size={80} />
+                // <Logo className={spinnerClass} size={80} />
+                // <h2 className={spinnerClass}>ShipCargo</h2>
             )}
         </Component>
     ) : (
@@ -53,6 +56,7 @@ const CoveredLoading = (props) => {
                         <>{customLoader}</>
                     ) : (
                         <Spinner className={spinnerClass} size={40} />
+                        // <Logo className={spinnerClass} size={80} />
                     )}
                 </div>
             )}

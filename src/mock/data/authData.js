@@ -2,10 +2,10 @@ export const signInUserData = [
     {
         id: '21',
         avatar: '/img/avatars/thumb-1.jpg',
-        userName: 'Prince',
-        email: 'carolyn.p@elstar.com',
+        userName: 'tuntun',
+        email: 'tuntun@shipclues.in',
         authority: ['admin', 'user'],
-        password: '123Qwe',
-        accountUserName: 'admin',
+        password: 'testing@123',
+        accountUserName: 'tuntun',
     },
 ]

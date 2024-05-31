@@ -1,5 +1,5 @@
 .form-item {
-    @apply mb-7 relative;
+    @apply mb-4 relative;
 
     &.horizontal {
         @apply flex flex-auto;
@@ -21,7 +21,7 @@
 }
 
 .form-label {
-    @apply flex items-center font-semibold;
+    @apply flex items-center font-normal text-xs;
 
     &.invalid {
         @apply text-red-500;
@@ -29,7 +29,7 @@
 }
 
 .form-explain {
-    @apply text-red-500 absolute;
+    @apply text-red-500;
 }
 
 .form-container {

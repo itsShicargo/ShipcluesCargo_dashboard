@@ -53,6 +53,10 @@
     @apply absolute top-2/4 transform -translate-y-2/4 ltr:left-2.5 rtl:right-2.5;
 }
 
+.input{
+    height: 2rem !important;
+}
+
 .input-suffix-end {
     @apply absolute top-2/4 transform -translate-y-2/4 ltr:right-2.5 rtl:left-2.5 flex;
 }

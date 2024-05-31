@@ -33,7 +33,7 @@ const recommendedSearch = [
                 url: '/ui-components/button',
                 icon: 'common',
                 category: 'Common',
-                categoryTitle: 'UI Components',
+                // categoryTitle: 'UI Components',
             },
         ],
     },

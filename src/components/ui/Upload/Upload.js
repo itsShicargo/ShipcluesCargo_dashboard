@@ -8,6 +8,7 @@ import Button from '../Buttons'
 import CloseButton from '../CloseButton'
 import Notification from '../Notification'
 import toast from '../toast'
+import "./upload.css"
 
 const filesToArray = (files) => Object.keys(files).map((key) => files[key])
 

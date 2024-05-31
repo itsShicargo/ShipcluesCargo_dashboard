@@ -14,7 +14,7 @@ const authNavigationConfig = [
         translateKey: 'nav.authentication.authentication',
         icon: 'authentication',
         type: NAV_ITEM_TYPE_TITLE,
-        authority: [ADMIN, USER],
+        authority: [USER],
         subMenu: [
             {
                 key: 'authentication.signIn',

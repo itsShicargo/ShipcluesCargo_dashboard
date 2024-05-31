@@ -1,0 +1,25 @@
+.form-header{
+    margin-top: 1rem !important;
+}
+
+.input-box {
+    padding-top: .5rem;
+    height: 2.5rem !important;
+    bottom: 0 !important;
+
+}
+
+
+
+.next-btn{
+    height: 2rem !important;
+    padding-bottom: .5rem;
+    padding-top: .3rem !important;
+}
+
+.svgsize svg{
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+    margin-left: 17px;
+    margin-top: 17px;
+}

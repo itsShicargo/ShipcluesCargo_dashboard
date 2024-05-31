@@ -8,6 +8,7 @@ export async function apiGetSalesDashboardData(data) {
     })
 }
 
+
 export async function apiGetSalesProducts(data) {
     return ApiService.fetchData({
         url: '/sales/products',
@@ -31,6 +32,7 @@ export async function apiGetSalesProduct(params) {
         params,
     })
 }
+
 
 export async function apiPutSalesProduct(data) {
     return ApiService.fetchData({

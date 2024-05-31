@@ -40,8 +40,12 @@
         }
     }
 
+    .css-15bhs5i-control{
+        min-height: 2.5rem !important;
+    }
+
     .select__control {
-        @apply dark:bg-transparent h-auto;
+        @apply dark:bg-transparent h-8;
 
         &.hide-single-value {
             .select__single-value {
@@ -88,7 +92,7 @@
 }
 
 .select-dropdown-indicator {
-    @apply p-2 text-xl hover:opacity-70;
+    @apply  text-xl hover:opacity-70;
 }
 
 .select-clear-indicator {

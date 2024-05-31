@@ -1,0 +1,13 @@
+
+
+.table-default thead>tr>th{
+    --tw-text-opacity: 1;
+    color: rgb(107 114 128 / var(--tw-text-opacity));
+    font-size: .75rem;
+    font-weight: 600;
+    letter-spacing: .05em;
+    line-height: 1rem;
+    padding: .75rem 1rem !important;
+    text-align: left;
+    text-transform: uppercase;
+}

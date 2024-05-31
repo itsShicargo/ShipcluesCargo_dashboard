@@ -23,5 +23,6 @@
 }
 
 .menu-transparent {
+    padding-left: 5rem;
     @apply bg-transparent;
 }

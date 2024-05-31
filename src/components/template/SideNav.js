@@ -16,6 +16,9 @@ import navigationConfig from 'configs/navigation.config'
 import VerticalMenuContent from 'components/template/VerticalMenuContent'
 import useResponsive from 'utils/hooks/useResponsive'
 import { useSelector } from 'react-redux'
+import "./nav.css"
+
+
 
 const sideNavStyle = {
     width: SIDE_NAV_WIDTH,

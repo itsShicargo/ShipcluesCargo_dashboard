@@ -1,0 +1,16 @@
+Today working on 
+
+1. Project name : Shipcargo Dashboard,
+
+1, components name Shipment >
+    (i). create Shipment
+        (i).Pickup location > Source Warehouse (Done)
+        (ii). Destination > Destination Warehouse (Done)
+        (iii). Package Details > Source Warehouse (90% Done)
+
+2. Side bar with decrease pahle 290 with tha now 235 with hain kr diye hai according to prince bhaiya change 
+
+2. Shipment create ka left side multi menu padding-left pahle px-2 ab px-16 kr diye hai according to prince bhaiya change 
+
+3. 
+

@@ -16,7 +16,7 @@ const ReduxToolkit = () => {
                 integrated with front-end frameworks like React, it allows you
                 to write scalable apps with maintainable codebases, however,
                 using redux requires a lot of boilerplate code. To reduce the
-                boilerplate codes and facilitate easier functionalities,{' '}
+                boilerplate codes and facilitate easier functionalities,
                 <a
                     href="https://redux-toolkit.js.org/"
                     target="_blank"

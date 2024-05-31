@@ -84,78 +84,80 @@ const appsRoute = [
     {
         key: 'appsSales.dashboard',
         path: `${APP_PREFIX_PATH}/sales/dashboard`,
-        component: React.lazy(() => import('views/sales/SalesDashboard')),
+        component: React.lazy(() => import('views/Shipments/SalesDashboard')),
         authority: [ADMIN, USER],
     },
-    {
-        key: 'appsSales.productList',
-        path: `${APP_PREFIX_PATH}/sales/product-list`,
-        component: React.lazy(() => import('views/sales/ProductList')),
-        authority: [ADMIN, USER],
-    },
-    {
-        key: 'appsSales.productEdit',
-        path: `${APP_PREFIX_PATH}/sales/product-edit/:productId`,
-        component: React.lazy(() => import('views/sales/ProductEdit')),
-        authority: [ADMIN, USER],
-        meta: {
-            header: 'Edit Product',
-        },
-    },
-    {
-        key: 'appsSales.productNew',
-        path: `${APP_PREFIX_PATH}/sales/product-new`,
-        component: React.lazy(() => import('views/sales/ProductNew')),
-        authority: [ADMIN, USER],
-        meta: {
-            header: 'Add New Product',
-        },
-    },
-    {
-        key: 'appsSales.orderList',
-        path: `${APP_PREFIX_PATH}/sales/order-list`,
-        component: React.lazy(() => import('views/sales/OrderList')),
-        authority: [ADMIN, USER],
-    },
-    {
-        key: 'appsSales.orderDetails',
-        path: `${APP_PREFIX_PATH}/sales/order-details/:orderId`,
-        component: React.lazy(() => import('views/sales/OrderDetails')),
-        authority: [ADMIN, USER],
-    },
-    {
-        key: 'appsCrypto.dashboard',
-        path: `${APP_PREFIX_PATH}/crypto/dashboard`,
-        component: React.lazy(() => import('views/crypto/CryptoDashboard')),
-        authority: [ADMIN, USER],
-    },
-    {
-        key: 'appsCrypto.portfolio',
-        path: `${APP_PREFIX_PATH}/crypto/portfolio`,
-        component: React.lazy(() => import('views/crypto/Portfolio')),
-        authority: [ADMIN, USER],
-        meta: {
-            header: 'Portfolio',
-        },
-    },
-    {
-        key: 'appsCrypto.market',
-        path: `${APP_PREFIX_PATH}/crypto/market`,
-        component: React.lazy(() => import('views/crypto/Market')),
-        authority: [ADMIN, USER],
-        meta: {
-            header: 'Market',
-        },
-    },
-    {
-        key: 'appsCrypto.wallets',
-        path: `${APP_PREFIX_PATH}/crypto/wallets`,
-        component: React.lazy(() => import('views/crypto/Wallets')),
-        authority: [ADMIN, USER],
-        meta: {
-            header: 'Wallets',
-        },
-    },
+
+    
+    // {
+    //     key: 'appsSales.productList',
+    //     path: `${APP_PREFIX_PATH}/sales/product-list`,
+    //     component: React.lazy(() => import('views/Shipments/ProductList')),
+    //     authority: [ADMIN, USER],
+    // },
+    // {
+    //     key: 'appsSales.productEdit',
+    //     path: `${APP_PREFIX_PATH}/sales/product-edit/:productId`,
+    //     component: React.lazy(() => import('views/Shipments/ProductEdit')),
+    //     authority: [ADMIN, USER],
+    //     meta: {
+    //         header: 'Edit Product',
+    //     },
+    // },
+    // {
+    //     key: 'appsSales.productNew',
+    //     path: `${APP_PREFIX_PATH}/sales/product-new`,
+    //     component: React.lazy(() => import('views/Shipments/ProductNew')),
+    //     authority: [ADMIN, USER],
+    //     meta: {
+    //         header: 'Add New Product',
+    //     },
+    // },
+    // {
+    //     key: 'appsSales.orderList',
+    //     path: `${APP_PREFIX_PATH}/sales/order-list`,
+    //     component: React.lazy(() => import('views/Shipments/OrderList')),
+    //     authority: [ADMIN, USER],
+    // },
+    // {
+    //     key: 'appsSales.orderDetails',
+    //     path: `${APP_PREFIX_PATH}/sales/order-details/:orderId`,
+    //     component: React.lazy(() => import('views/Shipments/OrderDetails')),
+    //     authority: [ADMIN, USER],
+    // },
+    // {
+    //     key: 'appsCrypto.dashboard',
+    //     path: `${APP_PREFIX_PATH}/crypto/dashboard`,
+    //     component: React.lazy(() => import('views/Warehouse/CryptoDashboard')),
+    //     authority: [ADMIN, USER],
+    // },
+    // {
+    //     key: 'appsCrypto.portfolio',
+    //     path: `${APP_PREFIX_PATH}/crypto/portfolio`,
+    //     component: React.lazy(() => import('views/Warehouse/Portfolio')),
+    //     authority: [ADMIN, USER],
+    //     meta: {
+    //         header: 'Portfolio',
+    //     },
+    // },
+    // {
+    //     key: 'appsCrypto.market',
+    //     path: `${APP_PREFIX_PATH}/crypto/market`,
+    //     component: React.lazy(() => import('views/Warehouse/Market')),
+    //     authority: [ADMIN, USER],
+    //     meta: {
+    //         header: 'Market',
+    //     },
+    // },
+    // {
+    //     key: 'appsCrypto.wallets',
+    //     path: `${APP_PREFIX_PATH}/crypto/wallets`,
+    //     component: React.lazy(() => import('views/Warehouse/Wallets')),
+    //     authority: [ADMIN, USER],
+    //     meta: {
+    //         header: 'Wallets',
+    //     },
+    // },
     {
         key: 'appsknowledgeBase.helpCenter',
         path: `${APP_PREFIX_PATH}/knowledge-base/help-center`,
@@ -195,12 +197,12 @@ const appsRoute = [
         authority: [ADMIN, USER],
     },
     {
-        key: 'appsAccount.settings',
-        path: `${APP_PREFIX_PATH}/account/settings/:tab`,
-        component: React.lazy(() => import('views/account/Settings')),
+        key: 'appsshipment.allshipment',
+        path: `${APP_PREFIX_PATH}/shipment/allshipment/:tab`,
+        component: React.lazy(() => import('views/Shipments/AllShipment')),
         authority: [ADMIN, USER],
         meta: {
-            header: 'Settings',
+            header: 'Allshipment',
             headerContainer: true,
         },
     },
@@ -219,6 +221,52 @@ const appsRoute = [
     {
         key: 'appsAccount.kycForm',
         path: `${APP_PREFIX_PATH}/account/kyc-form`,
+        component: React.lazy(() => import('views/account/KycForm')),
+        authority: [ADMIN, USER],
+    },
+
+    // Shipmemt route Start ...
+
+    {
+        key: 'allshipment',
+        path: `${APP_PREFIX_PATH}/shipment/allshipment`,
+        component: React.lazy(() => import('views/Shipments/AllShipment')),
+        authority: [ADMIN, USER],
+    },
+
+    {
+        key: 'shipment',
+        path: `${APP_PREFIX_PATH}/shipment/create-shipment`,
+        component: React.lazy(() => import('views/Shipments/CreateShipment')),
+        authority: [ADMIN, USER],
+    },
+
+    {
+        key: 'pickuprequest',
+        path: `${APP_PREFIX_PATH}/shipment/pickuprequest`,
+        component: React.lazy(() => import('views/Shipments/PickupRequest')),
+        authority: [ADMIN, USER],
+    },
+
+    //  Warehouse
+    {
+        key: 'werehouse',
+        path: `${APP_PREFIX_PATH}/werehouse/werehouse`,
+        component: React.lazy(() => import('views/Warehouse/warehouse')),
+        authority: [ADMIN, USER],
+    },
+    {
+        key: 'AddWarehouse',
+        path: `${APP_PREFIX_PATH}/AddWarehouse/AddWarehouse`,
+        component: React.lazy(() => import('views/Warehouse/Add Warehouse')),
+        authority: [ADMIN, USER],
+    },
+
+    // 
+
+    {
+        key: 'appsAccount.kycForm',
+        path: `${APP_PREFIX_PATH}/shipment`,
         component: React.lazy(() => import('views/account/KycForm')),
         authority: [ADMIN, USER],
     },

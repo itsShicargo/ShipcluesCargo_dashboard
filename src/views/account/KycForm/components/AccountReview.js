@@ -10,7 +10,7 @@ const AccountReview = () => {
                 darkModeSrc="/img/others/pending-approval-dark.png"
                 alt=""
             />
-            <h4 className="mb-4">Account application proccessing</h4>
+            <h4 className="mb-4">Shipment creation application proccessing</h4>
             <p>
                 Your account application is currently under review & will be
                 finalize shortly.

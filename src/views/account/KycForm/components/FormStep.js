@@ -7,17 +7,24 @@ import { setCurrentStep } from '../store/stateSlice'
 import { setStepStatus } from '../store/dataSlice'
 
 const steps = [
-    { label: 'Personal information', value: 0 },
-    { label: 'Identification', value: 1 },
-    { label: 'Address Information', value: 2 },
-    { label: 'Financial Information', value: 3 },
+    { label: 'Pickup location', value: 0 },
+    { label: 'Destination', value: 1 },
+    { label: 'Package Details', value: 2 },
+    { label: 'Carrier Partner', value: 3 },
+    { label: 'Other Details', value: 4 },
+    { label: 'Submit', value: 4 },
+    // New steps
+    // { label: 'Payment', value: 6 },
+    // { label: 'Confirmation', value: 7 },
 ]
 
-const FormStep = ({ currentStep, currentStepStatus, stepStatus }) => {
+
+const FormStep = ({ currentStep, currentStepStatus, stepStatus  , setShowError }) => {
     const { textTheme } = useThemeClass()
     const dispatch = useDispatch()
 
-    const onStepChange = (step) => {
+    const onStepChange = (step , setShowError) => {
+        console.log("cureentShetp:::::" , stepStatus[step].status);
         const selectedStepStatus = stepStatus[step].status
 
         if (
@@ -34,16 +41,20 @@ const FormStep = ({ currentStep, currentStepStatus, stepStatus }) => {
             }
             dispatch(setCurrentStep(step))
         }
+
+        if(selectedStepStatus == "pending"){
+            setShowError(true)
+        }
     }
 
     return (
-        <Menu variant="transparent" className="px-2">
+        <Menu variant="transparent" className="px-16">
             {steps.map((step) => (
                 <Menu.MenuItem
                     key={step.value}
                     eventKey={step.value.toString()}
                     className={`mb-2`}
-                    onClick={() => onStepChange(step.value)}
+                    onClick={() => onStepChange(step.value , setShowError)}
                     isActive={currentStep === step.value}
                 >
                     <span className="text-2xl ltr:mr-2 rtl:ml-2">

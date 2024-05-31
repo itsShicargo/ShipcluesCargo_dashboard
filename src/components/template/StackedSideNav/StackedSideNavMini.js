@@ -74,9 +74,13 @@ const StackedSideNavMini = (props) => {
                 type="streamline"
                 gutter={SIDE_NAV_CONTENT_GUTTER}
             />
+
+            {/* <img src='/img/logo/Light M.svg' type="streamline"
+                gutter={SIDE_NAV_CONTENT_GUTTER} alt='logo' /> */}
+
             <ScrollBar autoHide direction={direction}>
                 <Menu
-                    className="px-4 pb-4"
+                    className="px-4 pb-4 pt-8"
                     variant={navMode}
                     defaultActiveKeys={activeKeys || [includedRouteTree.key]}
                 >

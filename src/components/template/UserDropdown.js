@@ -5,8 +5,12 @@ import useAuth from 'utils/hooks/useAuth'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 import classNames from 'classnames'
-import { HiOutlineUser, HiOutlineCog, HiOutlineLogout } from 'react-icons/hi'
-import { FiActivity } from 'react-icons/fi'
+import { HiOutlineUser, HiOutlineLogout } from 'react-icons/hi'
+// import { FiActivity } from 'react-icons/fi'
+import { MdIndeterminateCheckBox } from "react-icons/md";
+import { VscReferences } from "react-icons/vsc";
+
+
 
 const dropdownItemList = [
     {
@@ -15,15 +19,16 @@ const dropdownItemList = [
         icon: <HiOutlineUser />,
     },
     {
-        label: 'Account Setting',
+        label: 'refer & Earn',
         path: '/app/account/settings/profile',
-        icon: <HiOutlineCog />,
+        icon: <VscReferences />,
     },
     {
-        label: 'Activity Log',
-        path: '/app/account/activity-log',
-        icon: <FiActivity />,
+        label: 'term & condition ',
+        path: '/app/account/settings/profile',
+        icon: <MdIndeterminateCheckBox />,
     },
+    
 ]
 
 export const UserDropdown = ({ className }) => {
