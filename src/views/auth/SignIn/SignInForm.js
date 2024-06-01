@@ -23,7 +23,7 @@ const SignInForm = (props) => {
 
     const onSignIn = async (values, setSubmitting) => {
         try {
-            const LOGIN_API_URL = 'http://65.0.103.217:8000/sellers/login/'
+            const LOGIN_API_URL = 'https://65.0.103.217:8000/sellers/login/'
             const resp = await axios.post(LOGIN_API_URL, values)
             if (resp.data) {
                 // Handle successful login
@@ -36,6 +36,8 @@ const SignInForm = (props) => {
         }
         setSubmitting(false)
     }
+
+
 
     return (
         <>
@@ -118,15 +120,32 @@ const SignInForm = (props) => {
                     )}
                 </Formik>
             </div>
-            {/* <div class="fixed bottom-0  left-0 w-full bg-gray-900 text-white py-4">
-                <div class="container mx-auto flex justify-center items-center">
-                    <span class="mr-2">Copyright &copy; 2024, ShipClues.</span>
+            <div className="fixed bottom-0  left-64  w-full py-4">
+                <div className="container mx-auto flex justify-center items-center">
+                    <span className="mr-2">
+                        Copyright &copy; 2024, ShipClues.
+                    </span>
                     <span>
-                        Made With <i class="fa fa-heart pulse"></i> in India.
+                        Made With <i className="fa fa-heart pulse"></i> in
+                        India.
+                    </span>
+                </div>
+            </div>
+
+            {/* <div className="fixed bottom-0 left-0 w-full py-4 md:left-64 md:py-0 md:bottom-auto md:relative">
+                <div className="container mx-auto flex flex-col md:flex-row justify-center items-center md:items-start">
+                    <span className="mr-2 mb-2 md:mb-0">
+                        Copyright &copy; 2024, ShipClues.
+                    </span>
+                    <span className="md:ml-2">
+                        Made With <i className="fa fa-heart pulse"></i> in
+                        India.
                     </span>
                 </div>
             </div> */}
         </>
+
+        
     )
 }
 

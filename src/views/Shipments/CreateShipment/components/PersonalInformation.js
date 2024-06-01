@@ -181,7 +181,7 @@ const PersonalInformation = ({
                                         />
                                     </FormItem>
                                 </div>
-                                <div className="flex justify-end gap-2">
+                                <div className="flex mt-44 justify-end gap-2">
                                     <Button
                                         className="next-btn"
                                         loading={isSubmitting}

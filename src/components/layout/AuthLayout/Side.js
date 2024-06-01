@@ -1,7 +1,7 @@
 import React, { cloneElement } from 'react'
 // import { Avatar } from 'components/ui'
 // import Logo from 'components/template/Logo'
-import { APP_NAME } from 'constants/app.constant'
+// import { APP_NAME } from 'constants/app.constant'
 
 const Side = ({ children, content, ...rest }) => {
     return (
@@ -32,10 +32,10 @@ const Side = ({ children, content, ...rest }) => {
                         top carriers with professional shipping in one place.
                     </p>
                 </div> */}
-                <span className="text-white fixed bottom-0">
+                {/* <span className="text-white fixed bottom-0">
                     Copyright &copy; {`${new Date().getFullYear()}`}{' '}
                     <span className="font-semibold">{`${APP_NAME}`}</span>{' '}
-                </span>
+                </span> */}
             </div>
             <div className="col-span-2 flex flex-col justify-center items-center bg-white dark:bg-gray-800">
                 <div className="xl:min-w-[450px] px-8">
