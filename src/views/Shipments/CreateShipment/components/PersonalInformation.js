@@ -65,11 +65,7 @@ const PersonalInformation = ({
             )}
 
             <div className="mb-8">
-                <img
-                    className='"mb-2 m-auto'
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADrElEQVR4nO2by2tUMRSHP0s7QsGFpUrRhUtdCbpTW9fWByK4tUv/ASso+ALtC7t335Ub0bWoC2sR0aUbd9LptBRfSLX4AK+LnIvX29w7SSa5kxnmB+Fc8jjn5ExykpxkoIceXHESqANJ5KkOjIcwQCd0Pk3LIQyQMo8dpXr2VahIlOgDasAcsAqsA3eBAYO2K0KrGMKLGblLluWgpmshZjUMZw0MMI6aW1UY4HlG7qJl+TJwoqwjDal4FBiV70/AYQMjkBEUG4z06st9b5PvIeA1cA/o965aZJhBP6Q25fs+5c7SdQRkfU/R0G+gpmPNgb+xXjWUERrAR2Be8g6ipkICTPgQlIPO9xSlGQf+XqbmeWHynuJR4Coo63uKkPqkhgN/ax+gwwNU5/cBhxyUMEGZDqlPCuZkmxkgAV7J9wHPsheE6pa1/PK2sKW1J5h4+DWhw55l3xQ6AewpqNNAdf6WZ9lWuIH6NYqU6Jp9QBG+CB1qSZ1IYWOAnSEVaRd6BjCo0zOA0CIDrAodbV0dbxgTuu6D2QjKm64VlOvOEp2QjGOF26XBj4Ly7Fmi3Z2yTcaxwu/SYNCgbqz7gjwSIDGNCXbtXsDUAJ+FmqwEscYKU2RHaN12BJgY4CJNgpAekZ1qf5qU51FH6WqER8LsrGkD4vUF/+kVYgR0FGJ0gqFjhU64LoJvW7RxnQKVxgpjnAIXhB5DhcR0Kd3qlgVrjRCjAVJUEiuM0QBRxArzOCKCX1q0cfUBJmeLFWCawBcmWeyXRu9CC6oA0TvBKDGAstpv/jmgZuiIEWCDb9JwR2hBgeE0BaBLp0HPABZ1bWICOiyx9XzerjwnPETNnXOG9fM+QOcT2pHXsg/oqrCYzfufVn3AC7b+Ou3Kc8I1YTRlWL/rlsEPQkcM66e3MjHeGBVd8pTiOMpyb1GHkHnUo6oqor++0ybqwGX1BLCG+lXT42i7O+EjzdkYAOByjkHZC6+Ykb4+s7487QceE6+Ds4FzHwZbaRwREiAxPdrqGoP50ThGJBDmDxOngKfAV0lPUP8vqgqVyE/jdfk1fopij3vHtxIamMofk7yVPANTlL0K+QVcQj2sHAYmUZGkqpY2G/nTrgYoi9xOaurnl8+QyUR+K1HlQmwI892asl1StuFToA/5IZygbnuZWlp3h99W+T4N8Eao7r5uIlcnBNotnzOoYfYTuIJ6Ab4XuCp5CWqJ6lb5QPkyZHO13qnyATgNPEM5nA3UpiS45V3l/wXPvTfQZzf6mwAAAABJRU5ErkJggg=="
-                    alt="icon"
-                />
+                <img  className='"mb-2 m-auto' src='/img/createshipment/source.png' alt='icon' />
                 <h3 className="mb-2 mt-2 text-center text-xs">
                     Source Warehouse
                 </h3>
